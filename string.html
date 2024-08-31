@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+     <!-- string length -->
+    <h1>String of Java Script</h1>
+    <p>Length Property</p>
+    <p>Length of the alphabets</p>
+    <p id="demo"></p>
+    <script>
+        let letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        document.getElementById("demo").innerHTML=letters.length;
+    </script>
+
+    <!-- string characters 
+     ==charAt()
+     ==charCodeAt()
+     ==at()
+     ==[]-->
+     <script>
+     let word="Morning";
+     document.write(word.charAt(4) + "<br>");
+     document.write(word.charCodeAt(4) + "<br>");
+     document.write(word.at(3) + "<br>");
+     document.write(word[6] + "<br>");
+    </script>
+
+
+    <!-- extracting string parts
+    ==slice(start, end)
+    ==substring(start, end)
+    ==substr(start, length) -->
+
+    <script>
+        let text = "Apple, Banana, Kiwi";
+        let part = text.slice(7, 13) + "<br>";
+        document.write(part);
+        let part1 = text.slice(7) + "<br>";
+        document.write(part1);
+        let part2 = text.slice(-12) + "<br>";
+        document.write(part2);
+        let part3 = text.slice(-12, -6) + "<br>";
+        document.write(part3);
+    </script>
+
+
+</body>
+</html>
