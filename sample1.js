@@ -10,4 +10,4 @@
 // datatypes
 
 let num=2;
-num.typeof();
+typeof(num);

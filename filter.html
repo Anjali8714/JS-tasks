@@ -7,10 +7,10 @@
 </head>
 <body>
     <script>
-        const arr=[2,7,4,3,5,8];
-        let arr1=Document.querySelectorAll(arr);
-        
+        const input=[1,5,9,15,30,50];
+        let a = input.filter(num => num%5==0);
+        let b = a.reduce((acc,nu)=>acc+nu);
+        console.log(b);
     </script>
-    
 </body>
 </html>

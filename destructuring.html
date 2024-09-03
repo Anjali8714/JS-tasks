@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body>                                                 ARRAY AND NESTED ARRAY DESTRUCTURING  -->
+    <!-- <p id="demo"></p> -->
+    <script>
+    // const person={first_name:'Anjali',second_name:'T',age:20};
+    // let {first_name,second_name}=person;
+    // document.getElementById("demo").innerHTML=('My name is' + " " + first_name + " " +'.' + second_name);
+
+        let arr=['anu','janu',2,4.5,8,"true",[1,2,3,4]];
+        // =arr[0];
+        // let name1=arr[1];
+        // let num=arr[2];
+        // let float=arr[3];
+        // let num1=arr[4];
+        // let word=arr[5];
+       // console.log(typeof(arr[3]));
+
+        let [name,name1,num,float,num1,word,[a1,a2,a3,a4]]=arr;
+
+
+        console.log(name);
+        console.log(name1);
+        console.log(num);
+        console.log(float);
+        console.log(num);
+        console.log(word);
+        console.log(a1);
+        console.log(a2);
+        console.log(a3);
+        console.log(a4);
+        //console.log(typeof(name);         
+    </script>
+                                                  <!-- // OBJECT AND NESTED OBJECT DESTRUCTURING  -->
+
+<script>
+let common={veg:"potato",veg1:"tomato",veg2:"carrot",fruits:{z1:"mango",z2:"pineapple",z3:"kiwi",z4:"grapes"}};
+
+// let veg=common.veg;
+// let veg1=common.veg1;
+// let z1=common.fruits.z1;
+// console.log(z1);
+
+let {veg,veg1,veg2,fruits:{z1,z2,z3,z4}}=common;
+
+
+console.log(veg2);
+console.log(z3);
+
+
+</script>
+</body>
+</html>
